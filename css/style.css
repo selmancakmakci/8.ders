@@ -18,27 +18,52 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border:  solid;
     padding: 10px;
+    background-color: aquamarine;
+    border-radius: 10px;
 
 }
-.left-items{
 
+nav:hover {
+    box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2);
+    
+}
+
+.profil-foto:hover{
+    box-shadow: 2px 4px rgba(0,0,0,0.2);
+    transform: scale(1.1);
+}
+.left-items{ border: 20px;
+    margin-left: 20px;
+   
 }
 .right-items{
     display: flex;
     justify-content: space-between;
+    margin-right: 20px;
     
-    
-    
+}
+.profil-foto{
+    border-radius: 5px;
 }
 .right-items a{
     margin-left: 10px;
     text-decoration:none;
     font-size: 20px;
+    font-weight: bolder;
+
+    
+    
+
 }
-a:hover{
-    background-color: rgba(0, 76, 255, 0.573);
+nav a:hover {
+   /*  background-color: rgba(0, 76, 255, 0.573); */
+    border-radius: 2px;
+    transform: scale(1.3);
+    color: brown;
+    border-width: 2px;
+    
+    
     
 
 }
@@ -49,31 +74,61 @@ a:hover{
 
 }
 aside{
-    border: solid 1px;
-    margin-top: 20px;
+    position: relative;
+    margin-top: 40px;
+    margin-right: 15px;
+}
+aside:hover{
     
 }
+.boydan-foto{
+    border-radius: 10px;
+    
+}
+
+
 
 .web3{
     color: chocolate;
 }
-#card{
+
+.icerik{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.card{
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
     margin-top: 50px;
-    
-    
+    padding: 130px;
 }
-.area{
-    background: linear-gradient(to bottom, #49d312, rgba(133, 48, 65, 0));
-    background-color: chocolate;
-    margin: 50px;
-    padding-top: 1.3%;
-    text-align:center;
-    align-items: stretch;
+    
 
+.area{
+    background-color:darkcyan;
+    background: linear-gradient(to bottom, darkcyan, rgba(133, 48, 65, 0)); 
+    text-align: center;
+    margin: 15px;
+    object-fit: cover;
+    border-radius: 50px;
+    padding-top: 20px;
+    flex-grow: 1;   
+    flex-shrink: 1;   
+    flex-basis: 0;    
+    margin: 10px;
+    
    
+}
+.area:hover{
+    box-shadow: 8px 8px 8px 8px  rgba(0,0,0,0.2);
+    transform: scale(1.1);
+
+}
+
+.card-img{
+    border-radius: 15px;
+
 }
 .name{
 font-size:  50px;
@@ -95,5 +150,42 @@ footer{
     margin: 50px;
     justify-content: flex-end;
     font-size: 25px;
+    background-color: darkgray;
+    border-radius: 10px;
+    align-items: center;
 
 }
+footer a{
+    text-decoration: none;
+    
+    display: flex;
+    align-items: center; 
+    text-decoration: none;
+    color: inherit; 
+
+}
+
+footer:hover{
+    box-shadow: 8px 8px 8px 8px  rgba(0,0,0,0.2);
+    
+
+}
+
+footer a:hover{
+    transform: scale(1.2);
+    color: brown;
+}
+
+footer a img{ 
+      /* width: 50px; */ 
+      margin-right:10px
+      justify-content: flex-end;
+      
+
+
+    }
+
+
+
+
+
