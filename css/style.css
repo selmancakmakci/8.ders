@@ -7,8 +7,9 @@ header{
     background-color: rgba(95, 158, 160, 0.49);
     /*width: 100%;*/
     margin-top: 10px;
-    margin: 10px 25px;
+   margin-bottom: 15px;
     padding: 5px 10px;
+    border-radius: 15px;
 }
 .isim{
     color: chocolate;
@@ -22,7 +23,6 @@ nav{
     background-color: aquamarine;
     border-radius: 10px;
     
-
 }
 
 nav:hover {
@@ -76,17 +76,19 @@ nav a:hover {
 
 .container{
     display: flex;
+    
+
 
 
 }
 aside{
     position: relative;
-    margin-top: 40px;
+    margin-top: 150px;
     margin-right: 15px;
+    border-left: solid 2px grey;
+    padding-left: 20px;
 }
-aside:hover{
-    
-}
+
 .boydan-foto{
     border-radius: 10px;
     
@@ -97,10 +99,29 @@ aside:hover{
 .web3{
     color: chocolate;
 }
+.baslik-vurgu{
+    font-size: 50px;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*text-decoration-line: underline;*/
+    text-align: justify;
+    
+}
+.kutu-icerik{
+    
+    
+}
 
 .icerik{
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right:20px;
+    /* border-right: solid 2px grey;
+    padding-right: 15px; */
+    
+}
+.yazi-vurgu{
+    font-style: italic;
+    font-weight: bold;
 }
 .card{
     display: flex;
@@ -108,6 +129,7 @@ aside:hover{
     align-items: center;
     margin-top: 50px;
     padding: 130px;
+    flex-wrap: wrap;
 }
     
 
@@ -116,13 +138,15 @@ aside:hover{
     background: linear-gradient(to bottom, darkcyan, rgba(133, 48, 65, 0)); 
     text-align: center;
     margin: 15px;
-    object-fit: cover;
+    object-fit: fill;
     border-radius: 50px;
     padding-top: 20px;
     flex-grow: 1;   
-    flex-shrink: 1;   
+    flex-shrink: ;   
     flex-basis: 0;    
     margin: 10px;
+    
+    
     
    
 }
@@ -148,48 +172,59 @@ text-align: center;
     color: rgb(227, 11, 11);
     
 }
-form{
-    background-color:azure;
-}
-footer{
-    display: flex;
-    margin: 50px;
-    justify-content:flex-end;
-    font-size: 25px;
-    background-color: darkgray;
-    border-radius: 10px;
-    
 
-}
+
 footer a{
     text-decoration: none;
-    
-    display: flex;
-    align-items: center; 
-    text-decoration: none;
+    display: flex; 
     color: inherit; 
 
 }
 
-footer:hover{
-    box-shadow: 8px 8px 8px 8px  rgba(0,0,0,0.2);
+footer{
+    display: flex ;
+    margin: 50px;
+    font-size: 25px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:end;
+    background-color: aliceblue;
+
     
 
 }
+
+.sosyal-media-yazi{
+    justify-content: flex-start;
+     font-size: 15px;
+     font-weight: bold;
+     margin-left: 20px;
+     color: rgb(149, 138, 138)
+
+}
+
+.sosyal-media{
+    display: flex;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    align-items: baseline;
+    
+}
+
+
+
+
+
+
 
 footer a:hover{
     transform: scale(1.2);
     
+    
 }
 
-footer a img{ 
-      /* width: 50px; */ 
-      margin-right:10px
-      justify-content: flex-end;
-      
 
-
-    }
 
 
 form{
@@ -207,7 +242,7 @@ form{
 .form-icerigi{
     justify-content: center;
     padding: 30px;
-    background-color: aqua;
+    background-color: white;
     border-radius: 20px;
 
 
@@ -216,6 +251,7 @@ form{
 .form-icerigi:hover {
     box-shadow: 8px 8px 8px 8px  rgba(0,0,0,0.2);
     transform: scale(1.5);
+    
 
 
 
@@ -226,7 +262,14 @@ input{
     box-shadow: 08px 8px 8px 8px rgba(0,0,0,0.1);
     outline: none;
     border: 2px solid #4CAF50;
+    
 }
+
+input:hover{
+    transform: scale(1.2);
+
+}
+
 button{
     border-radius: 10px;
     box-shadow: 08px 8px 8px 8px rgba(0,0,0,0.1);
@@ -236,6 +279,24 @@ button{
     margin-top: 20px;
 }
 
+button:hover{
+    transform: scale(1.2);
+}
+
+.copyright{
+    border-top: solid 2px grey;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    
+
+}
+
+..copyright a{
+    padding-top: 20px;
+}
 
 
 
